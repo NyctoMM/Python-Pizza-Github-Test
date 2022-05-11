@@ -1,10 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        Sleepy Pizzas
-    </head>
-    <body>
-        <h1>Under Construction!</h1>
-        <h2>Some nice Commits happening soon!</h2>
-    </body>
-</html>
+<head>
+    <title>Nycto's Sleepy Pizza</title>
+    <script src="pizza.js"></script>
+</head>
+
+<body>
+
+    <img src=null>
+    <h1>Welcome to the Sleepest Pizza this side of PA!</h1>
+    <h5>Please note, price is given after the pizza is ordered, look at the not-included menu for prices</h5>
+    <br>
+    <h2>Please enter your Name, Phone #, and Address</h2>
+    <h3>Please enter all information correctly</h3>
+        <form>
+            <label for = "OrderName">Name: </label>
+            <input type= "Text" id = "customerName" name = "OrderName" placeholder="Name Here"><br>
+            <label for = "Address">Address: </label>
+            <input type = "Text" id = "customerAddress" name = "Address" placeholder="Address Here"><br>
+        </form>
+    
+        <h2>Please pick your size of Pizza</h2>
+            <form>
+                <select name = "size" id = "pizzaSize">
+                    <option value="small">Small - 10 Inches</option>
+                    <option value="medium">Medium - 12 Inches</option>
+                    <option value="large">Large - 16 Inches</option>
+                    <option value="Extra">Extra Large - 18 Inches</option>
+                </select>
+            </form>
+        <h2>Please pick your style of Pizza</h2>
+            <form>
+                <select name = "style" id = "pizzaStyle">
+                    <option value="Regular">Regular Handmade</option>
+                    <option value="Thin">Thin New York Style Crust</option>
+                    <option value="Pan">Chicago Pan Pizza</option>
+                </select>
+            </form>
+
+        <h2>Please pick your toppings</h2>
+            <form>
+                <input type = "checkbox" id = "topping1" name = "toppings1" value = "Cheese" checked>
+                <label for = "toppings1"></label>Cheese<br>
+                <input type = "checkbox" id = "topping2" name = "toppings2" value = "Pepperoni" checked>
+                <label for = "toppings2"></label>Pepperoni<br>
+                <input type = "checkbox" id = "topping3" name = "toppings3" value = "Sasuage">
+                <label for = "toppings3"></label>Sasuage<br>
+                <input type = "checkbox" id = "topping4" name = "toppings4" value = "Mushrooms">
+                <label for = "toppings4"></label>Mushrooms<br>
+            </form>
+
+        <h2>Please select the delivery</h2>
+        <form>
+            <input type = "radio" id="pickUp" name = "deliveryOption" value = "Pick-Up" checked>
+            <label for="">Pick-Up</label><br>
+            <input type = "radio" id="delivery" name = "deliveryOption" value = "Delivery">
+            <label for="">Delivery</label><br>
+        </form>
+
+        <br>
+        <br>
+
+        <input type = "button" value = "Place Order" onclick="Ordering()">
+
+</body>
